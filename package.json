@@ -1,0 +1,32 @@
+{
+  "name": "voicesphere-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VoiceSphere Monorepo",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "db:generate": "turbo run db:generate",
+    "db:migrate": "turbo run db:migrate",
+    "db:seed": "turbo run db:seed",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "@prisma/client": "5.18.0",
+    "@types/bcrypt": "^5.0.2",
+    "bcrypt": "^5.1.1",
+    "prettier": "^3.3.3",
+    "prisma": "5.18.0",
+    "ts-node": "^10.9.2",
+    "turbo": "^2.0.14",
+    "typescript": "^5.5.4"
+  },
+  "packageManager": "pnpm@11.21.0",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  }
+}
