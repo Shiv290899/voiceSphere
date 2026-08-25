@@ -9,4 +9,12 @@ allowBuilds:
   esbuild: true
   msgpackr-extract: true
   prisma: true
-  unrs-resolver: set this to true or false
+onlyBuiltDependencies:
+  - '@nestjs/core'
+  - '@prisma/client'
+  - '@prisma/engines'
+  - bcrypt
+  - esbuild
+  - msgpackr-extract
+  - prisma
+  - unrs-resolver
